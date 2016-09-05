@@ -156,7 +156,7 @@ FINAL WARNING
 IT IS POSSIBLE TO ENABLE VULNERABLE SERVICES ON ETH0. ONLY DO SO ON A PRIVATE LAN. DO NOT EXPOSE THIS HOST TO THE INTERNET OR FORWARD INTERNET 
 TRAFFIC TO IT. YOU HAVE BEEN WARNED. 
 
-Contact Us
+Contact
 -------------
 
 Bugs, Requests, Shout-Outs, Feedback, Donations, Marriage Proposals, Death Threats, Etc. - Drop me a line :-)  -  info@raspwn.org
