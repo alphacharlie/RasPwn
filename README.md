@@ -102,17 +102,17 @@ the Playground. Everything from DNS to MTA to MySQL to Apache2 is already set up
 Two email accounts have been set up with the credentials -
 
 * user 1 - admin@playground.raspwn.org
-* password - Pa55w0rd!
+* password - *Pa55w0rd!*
 
 * user 2 - mrbill@playground.raspwn.org
-* password - OhNoMrBill!
+* password - *OhNoMrBill!*
 
 (More email accounts can be added too but that's a 'coming soon'.)
 
 If you wish to customize RasPwn or play Red vs. Blue, you can logon locally or via SSH. The default credentials are:
 
 * user - pi
-* password - pwnme!
+* password - *pwnme!*
 
 
 The current documentation is minimal (sorry) I'll be adding more as I can. 
