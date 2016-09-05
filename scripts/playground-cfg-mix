@@ -1,0 +1,31 @@
+#!/bin/sh
+# Script to enable the Raspwn Playground on Apache2 (instead of Nginx)
+
+#First setup Apache2 Playground on 192.168.99.13
+rm -vf /etc/apache2/sites-enabled/*
+a2ensite playground.raspwn.org-wifi
+a2ensite playground.raspwn.org-ssl-wifi
+cp /etc/apache2/ports.conf-wifi /etc/apache2/ports.conf
+
+#Now enable Nginx Playground on 192.168.99.7
+rm /etc/nginx/sites-enabled/*
+ln -s /etc/nginx/sites-available/playground.raspwn.org-07 /etc/nginx/sites-enabled/playground.raspwn.org-07
+
+# Now restart
+service apache2 stop
+service nginx stop
+service apache2 start
+service nginx start
+
+update-rc.d apache2 defaults
+update-rc.d nginx defaults
+
+/bin/echo -e  'RasPwn Web Playground now configured to use both Nginx and Apache2 on Wifi';
+/bin/echo -e '                \e[31mCOULD BREAK THINGS...\e[39m ';
+/bin/echo -e '';
+/bin/echo -e 'Use \e[1mplayground-cfg-apache\e[0m to use Apache2 as the http server'
+/bin/echo -e 'Use \e[1mplayground-cfg-apache-promisc\e[0m to also listen on eth0 \e[31m(DANGEROUS!)\e[39m';
+/bin/echo -e 'Use \e[1mplayground-cfg-nginx\e[0m to use Nginx as the http server';
+/bin/echo -e 'Use \e[1mplayground-cfg-nginx-promisc\e[0m to use Nginx AND also listen on eth0 \e[31m(DANGEROUS!)\e[39m';
+
+
