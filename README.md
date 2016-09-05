@@ -101,11 +101,11 @@ the Playground. Everything from DNS to MTA to MySQL to Apache2 is already set up
 
 Two email accounts have been set up with the credentials -
 
-user 1 - admin@playground.raspwn.org
-password - Pa55w0rd!
+* user 1 - admin@playground.raspwn.org
+* password - Pa55w0rd!
 
-user 2 - mrbill@playground.raspwn.org
-password - OhNoMrBill!
+* user 2 - mrbill@playground.raspwn.org
+* password - OhNoMrBill!
 
 (More email accounts can be added too but that's a 'coming soon'.)
 
@@ -123,7 +123,7 @@ http://snapshot.debian.org/archive/debian/20150203T222332Z/ so any package that 
 installed simply by connecting eth0 to the internet and using apt-get. So it's possible to customize the RasPwn image by installing xorg or 
 other software from the Debian repository. 
 
-**NOTE - It is possible to connect **eth0** to the internet and use RasPwn as a (possibly the world's most insecure) wireless router however - 
+**NOTE - It is possible to connect *eth0* to the internet and use RasPwn as a (possibly the world's most insecure) wireless router however - 
 IF YOU DO SO PLEASE DO SO FROM BEHIND NAT AND A FIREWALL! DO NOT EXPOSE ANY RASPWN INTERFACES DIRECTLY TO THE INTERNET OR FORWARD INTERNET 
 TRAFFIC TO RASPWN IN ANY WAY!!!** 
 
