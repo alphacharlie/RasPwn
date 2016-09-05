@@ -4,19 +4,21 @@ Raspwn OS README File
 Why Raspwn OS?
 -------------
 
-Welcome to Raspwn OS, The intentionally vulnerable Linux distro for the Raspberry Pi.
+Welcome to Raspwn OS 0.12, The intentionally vulnerable image for the Raspberry Pi.
 
 Raspwn OS is a GNU/Linux Distro in the spirit of [Damn Vulnerable Linux](https://distrowatch.com/table.php?distribution=dvl) and uses a Raspberry Pi 2B or 3 to emulate a vulnerable Linux Server.
 Raspwn was designed as a training tool and exists **only** to be attacked and pwned. Everything from the OS itself to the daemons and services 
 to the web applications installed are all vulnerable to some degree. The idea is to provide a 'safe' (relatively) and affordable training 
 environment and playground for hackers and pentesters. By loading Raspwn OS and connecting to the Raspberry Pi via WiFi, one can practice pen-
-testing as well as both offensive and defensive hacking techniques without ever even getting on the internet for around $50.
+testing as well as both offensive and defensive hacking techniques *without ever even getting on the internet* for only around $50.
 
-On top of the base OS ans LAMP stack we have created the Raspwn Playground. This website contains a myriad of web applications, all of which are either 
-out-of-date or intentionally vulnerable. In addition to the services and applications listed, the OS itself is based upon a Debian Snapshot from
-February 2015. So system libraries such as libc and imagemagick (and others) have known exploits.
+On top of the base OS ans LAMP stack we have created the Raspwn Web Playground. This website contains a myriad of web applications, all of which are 
+either out-of-date or intentionally vulnerable. 
 
-**RasPwn OS** Is a flavor of [Debian GNU/Linux](http://debian.org) and would not exist without the work of thousands of folks around the world that make
+In addition all of to the services and applications listed, the OS itself is based upon a Debian Snapshot from February 2015. So system libraries such 
+as [libc](https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2015-0235) (and others ;-P ) have known exploits.
+
+**RasPwn OS** Is an offshoot of [Debian GNU/Linux](http://debian.org) and would not exist without the work of thousands of folks around the world that make
 [free software](http://fsf.org) a reality.  
 
 Requirements
@@ -28,7 +30,7 @@ Raspwn OS requires the following:
 * A 5V micro-USB power supply for the pi
 * A MicroSD Card - 4GB Minimum (8GB or greater Recommended, Class 10 Recommended) 
 
-Note that a Wifi Adapter is *only* required for the Pi 2b. The Pi 3 has internal WiFi.
+Note that a Wifi Adapter is *only* required for the Pi 2b. The Pi 3 has internal WiFi which is hostapd compatible.
  
 Install
 -------------
@@ -105,7 +107,7 @@ password - Pa55w0rd!
 user 2 - mrbill@playground.raspwn.org
 password - OhNoMrBill!
 
-(More email accounts can be added too but that's 'coming soon'.)
+(More email accounts can be added too but that's a 'coming soon'.)
 
 If you wish to customize RasPwn or play Red vs. Blue, you can logon locally or via SSH. The default credentials are:
 
@@ -116,12 +118,12 @@ If you wish to customize RasPwn or play Red vs. Blue, you can logon locally or v
 The current documentation is minimal (sorry) I'll be adding more as I can. 
 
 RasPwn images are put together from [snapshots](http://snapshot.debian.org/) of Debian Linux. This allows us to create a vulnerable system 
-without breaking the system stability. The end effect is that RasPwn is a fly in amber. The current snapshot is 
+image without breaking the system stability. The end effect is that RasPwn is a fly in amber. The current snapshot is 
 http://snapshot.debian.org/archive/debian/20150203T222332Z/ so any package that was available in Debian Wheezy on February 3rd 2015 can be 
 installed simply by connecting eth0 to the internet and using apt-get. So it's possible to customize the RasPwn image by installing xorg or 
 other software from the Debian repository. 
 
-**NOTE - It is possible to connect eth0 to the internet and use RasPwn as a (possibly the world's most insecure) wireless router however - 
+**NOTE - It is possible to connect **eth0** to the internet and use RasPwn as a (possibly the world's most insecure) wireless router however - 
 IF YOU DO SO PLEASE DO SO FROM BEHIND NAT AND A FIREWALL! DO NOT EXPOSE ANY RASPWN INTERFACES DIRECTLY TO THE INTERNET OR FORWARD INTERNET 
 TRAFFIC TO RASPWN IN ANY WAY!!!** 
 
@@ -140,12 +142,21 @@ Raspwn are in that snapshot, with the following exceptions-
 
 License
 -------------
+RasPwn OS is GNU/Linux and is released under the GPL License (version 3) a copy of which is included with the image. 
 
-RasPwn OS is released under the GPL License (version 3) a copy of which is included with the image. 
+RasPwn OS is based on [Debian](http://debian.org). However they may be appalled by the use we have found for their snapshot mirror. (we hope not.)
+RasPwn OS is an independent project. It and raspwn.org are not affiliated with or endorsed by Debian.org in any way. (RasPwn OS on the other hand 
+*totally* endorses [Debian](http://debian.org)!)
 
-RasPwn is free(as in speech) software. It is also free(as in beer). Enjoy!
+RasPwn is free (as in speech) software. It is also free (as in beer). Enjoy!
+
+
+FINAL WARNING
+-------------
+IT IS POSSIBLE TO ENABLE VULNERABLE SERVICES ON ETH0. ONLY DO SO ON A PRIVATE LAN. DO NOT EXPOSE THIS HOST TO THE INTERNET OR FORWARD INTERNET 
+TRAFFIC TO IT. YOU HAVE BEEN WARNED. 
 
 Contact Us
 -------------
 
-Bugs, Requests, Shout-Outs, Feedback, Donations, Marriage Proposals, Death Threats, Etc. - Drop me a line :-)  -  chuck@raspwn.org
+Bugs, Requests, Shout-Outs, Feedback, Donations, Marriage Proposals, Death Threats, Etc. - Drop me a line :-)  -  info@raspwn.org
