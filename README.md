@@ -93,7 +93,7 @@ Out-Of-Date Web Applications
 The admin account for web applications is -
 
 * user - admin (admin@playground.raspwn.org)
-*password - Pa55w0rd!
+* password - *Pa55w0rd!*
 
 The Web applications exist in their own little Universe. Each gets it's DNS from Raspwn and all mail outgoing to the *@playground.raspwn.org 
 is delivered to the local mail server at mail.playground.raspwn.org and can be retrieved via IMAP from that host or viewed from Roundcube in 
