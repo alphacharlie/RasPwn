@@ -12,7 +12,7 @@ to the web applications installed are all vulnerable to some degree. The idea is
 environment and playground for hackers and pentesters. By loading Raspwn OS and connecting to the Raspberry Pi via WiFi, one can practice pen-
 testing as well as both offensive and defensive hacking techniques *without ever even getting on the internet* for only around $50.
 
-On top of the base OS ans LAMP stack we have created the Raspwn Web Playground. This website contains a myriad of web applications, all of which are 
+On top of the base OS and LAMP stack we have created the Raspwn Web Playground. This website contains a myriad of web applications, all of which are 
 either out-of-date or intentionally vulnerable. 
 
 In addition all of to the services and applications listed, the OS itself is based upon a Debian Snapshot from February 2015. So system libraries such 
